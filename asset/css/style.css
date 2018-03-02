@@ -10,6 +10,14 @@ p,a,h1,h2,h3,h4,h5{
 	margin-right: 50px
 }
 
+.mobilehide{
+	display: block;
+}
+
+.mobileshow{
+	display: none;
+}
+
 .left_index img{
 	width: 100%;
 	height: auto;
@@ -92,3 +100,103 @@ p,a,h1,h2,h3,h4,h5{
 	margin-top: 150px !important;
 }
 
+
+/*1400 - 1200 =========================================== Start*/
+@media only screen and (min-width: 1200px) and (max-width:1450px){
+  
+}
+/*1400 - 1200 =========================================== End*/
+
+/*Selipan Support*/
+@media (min-width: 1200px){
+	
+}
+
+
+/*1200 - 1000 =========================================== Start*/
+@media only screen and (max-width: 1200px) {
+
+}
+/*1200 - 1000 =========================================== End*/
+
+/*1000 - 767 =========================================== Start*/
+@media only screen and (max-width: 1000px) {
+  
+	.mobilehide{
+		display: none;
+	}
+
+	.mobileshow{
+		display: block;
+	}
+}
+/*1000 - 767 =========================================== End*/
+
+/*767 - 480 =========================================== Start*/
+@media only screen and (max-width: 767px) {
+
+}
+/*767 - 480 =========================================== End*/
+
+/*Selipan Support*/
+@media screen and (max-width:700px) {
+   
+}
+
+
+/*Selipan Support*/
+@media screen and (max-width:650px) {
+   
+}
+
+
+/*Selipan Support*/
+@media screen and (max-width:600px) {
+
+ 
+}
+
+/*Selipan Support*/
+@media screen and (max-width:550px) {
+   
+}
+
+/*Selipan Support*/
+@media screen and (max-width:500px) {
+   
+}
+
+
+
+
+/*480 - 000 =========================================== Start*/
+@media only screen and (max-width: 480px) {
+  
+}
+/*480 - 000 =========================================== end*/
+
+
+/*Selipan Support*/
+@media only screen and (max-width: 450px) {
+  
+
+/*Selipan Support*/
+@media screen and (max-width:400px) {
+   
+}
+
+/*Selipan Support*/
+@media screen and (max-width:350px) {
+  
+}
+
+/*Selipan Support*/
+@media screen and (max-width:300px) {
+   .mobilehide{
+	display: none;
+	}
+
+	.mobileshow{
+		display: block;
+	}
+}
