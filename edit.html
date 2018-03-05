@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="asset/css/style.css"/> 
+</head>
+<body>
+
+<nav class="navbar menu">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="logos" href="index.html" id="menu-home"><img src="asset/image/logo.png" class="imagestyle"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <h5 class="dms_nav" >Dock Management System</h5>
+    </ul>
+    <ul class="nav navbar-nav navbar-right rightbar">
+      <li><h5 class="right-time mobilehide">WEDNESDAY 15 OCTOBER 2018 / 21:15</h5></li>
+      <li><a href="#" style="margin-right: 10px"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a></li>
+      <li><a href="#"><img class="iconrightnav" src="asset/image/logout.png" alt=""></a></li>
+    </ul>
+  </div>
+</nav>
+<nav class="navbar menu noborder">
+  <div class="container">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active"  href="menu.html" >INBOND </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="menu.html" >OUTBOND</a>
+      </li>
+      <li class="nav-item navbar-right">
+        <a class="nav-link" href="menu.html">SCAN <img src="asset/image/qrcode.png" style="height: 30px; width: auto; margin-left: 5px;" alt=""></a>
+      </li>
+      <li class="nav-item navbar-right">
+        <a class="nav-link" href="menu.html">USER PROFILE</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Tab panes -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <!-- <form action="" method=""> -->
+        <input type="text" class="form-text" name="driver" placeholder="Driver Name">
+        <input type="text" class="form-text" name="phone" placeholder="Phone">
+        <input type="text" class="form-text" name="type" placeholder="Type Of Vehicle">
+        <input type="text" class="form-text" name="platno" placeholder="Plat No">
+        <input type="text" class="form-text" name="trans_company" placeholder="Transportation Company">
+        <input type="text" class="form-text" name="shipment" placeholder="Shipment">
+        <input type="text" class="form-text" name="" placeholder="Customer / Project Name">
+        <div class="row">
+          <div class="col-sm-3 text-center">
+            <a href="menu.html"><input style="width: 100%" type="submit" class="btn btn-success submit" value="SUBMIT"/></a>
+          </div>
+          <div class="col-sm-3 text-center">
+            <a href="menu.html"><input style="width: 100%" type="submit" class="btn btn-danger delete" value="CANCEL"/></a>
+          </div>
+      </div>
+      <!-- </form> -->
+    </div>
+  </div>
+</div>
+</body>
+
+<script src="asset/js/jquery.min.js"></script>
+<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+<script>
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+</html>

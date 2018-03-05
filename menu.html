@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="asset/css/style.css"/> 
+</head>
+<body>
+
+<nav class="navbar menu  navbar-fixed-top">
+  <div class="container ">
+    <div class="navbar-header ">
+      <a class="logos" href="index.html" id="menu-home"><img src="asset/image/logo.png" class="imagestyle"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <h5 class="dms_nav" >Dock Management System</h5>
+    </ul>
+    <ul class="nav navbar-nav navbar-right rightbar">
+      <li><h5 class="right-time mobilehide">WEDNESDAY 15 OCTOBER 2018 / 21:15</h5></li>
+      <li><a href="#" style="margin-right: 10px"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a></li>
+      <li><a href="#"><img class="iconrightnav" src="asset/image/logout.png" alt=""></a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar menu noborder navbar-default navbar-fixed-top matop">
+  <div class="container">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#inbond" role="tab">INBOND </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#outbond" role="tab">OUTBOND</a>
+      </li>
+      <li class="nav-item navbar-right">
+        <a class="nav-link" data-toggle="tab" href="#scan" role="tab">SCAN <img src="asset/image/qrcode.png" style="height: 30px; width: auto; margin-left: 5px;" alt=""></a>
+      </li>
+      <li class="nav-item navbar-right">
+        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">USER PROFILE</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!-- Tab panes -->
+<div class="container margi">
+  <div class="tab-content">
+    <div class="tab-pane active"   id="inbond" role="tabpanel">
+      <table class="table table-striped"  width="100%" cellspacing="0">     
+        <thead class="thead" >
+          <tr>
+            <th>ID</th>
+            <th>PLAT NO</th>
+            <th>DRIVER NAME</th>
+            <th class="phone">PHONE</th>
+            <th class="cus">CUSTOMER / PROJECT NAME</th>
+            <th>PLT</th>
+            <th>GATE</th>
+            <th>STATUS</th>
+            <th class="log">LOG</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+
+        <tbody >
+          <tr>    
+            <td>256SNG</td>
+            <td>T 2992 BGC</td>
+            <td>Sandi Rizaldi</td>
+            <td class="phone">08544455454</td>
+            <td class="cus">J&T</td>
+            <td>- - -</td>
+            <td>- - -</td>
+            <td>Truck Arrival</td>
+            <td class="log"></td>
+            <td style="float: left;">
+              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+            </td>
+          </tr>
+          <tr>    
+            <td>542SPK</td>
+            <td>T 5646 CCD</td>
+            <td>Andi Lau</td>
+            <td class="phone">08124545664</td>
+            <td class="cus">TiKi</td>
+            <td>- - -</td>
+            <td>- - -</td>
+            <td>Truck Arrival</td>
+            <td class="log"></td>
+            <td style="float: left;">
+              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+            </td>
+          </tr>
+          <tr>    
+            <td>221KPT</td>
+            <td>T 1234 FCG</td>
+            <td>Udin Sedunia</td>
+            <td class="phone">08135586498</td>
+            <td class="cus">JNE</td>
+            <td>- - -</td>
+            <td>- - -</td>
+            <td>Truck Arrival</td>
+            <td class="log"></td>
+            <td style="float: left;">
+              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tab-pane" id="outbond" role="tabpanel">
+      <table class="table table-striped" width="30%" cellspacing="0">     
+        <thead class="thead">
+          <tr>
+            <th>ID</th>
+            <th>PLAT NO</th>
+            <th>DRIVER NAME</th>
+            <th>PHONE</th>
+            <th>CUSTOMER / PROJECT NAME</th>
+            <th>PLT</th>
+            <th>GATE</th>
+            <th>STATUS</th>
+            <th>LOG</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+
+        <tbody >
+          <tr>    
+            <td>327LGT</td>
+            <td>T 2555 BGC</td>
+            <td>Ucup Sanusi</td>
+            <td>08545665348</td>
+            <td>J&T</td>
+            <td>- - -</td>
+            <td>- - -</td>
+            <td>Truck Arrival</td>
+            <td></td>
+            <td style="float: left;">
+              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+            </td>
+          </tr>
+          <tr>    
+            <td>327SPT</td>
+            <td>T 9099 DDD</td>
+            <td>Roni Antara</td>
+            <td>08156456555</td>
+            <td>J&E</td>
+            <td>- - -</td>
+            <td>- - -</td>
+            <td>Truck Arrival</td>
+            <td></td>
+            <td style="float: left;">
+              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+            </td>
+          </tr>
+          <tr>    
+            <td>299TTS</td>
+            <td>T 1111 OCG</td>
+            <td>Lia Sane</td>
+            <td>08156456455</td>
+            <td>JNE</td>
+            <td>- - -</td>
+            <td>- - -</td>
+            <td>Truck Arrival</td>
+            <td></td>
+            <td style="float: left;">
+              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <div class="tab-pane" id="profile" role="tabpanel"><h1>user profile</h1></div>
+      <div class="tab-pane" id="scan" role="tabpanel"><h1>scan</h1></div>
+    </div>
+</div>
+
+<!-- tes -->
+<br>  <br>  
+<div style="background-color: red; width: 100%; height: 10px;"> </div>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ducimus, vero aliquam. Voluptas tempore ratione delectus aperiam blanditiis iure amet quidem, qui iusto dolor voluptatibus libero atque corporis veritatis magnam.
+<!-- end Test -->
+
+</body>
+
+<script src="asset/js/jquery.min.js"></script>
+<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+<script>
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+</html>

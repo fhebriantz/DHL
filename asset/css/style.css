@@ -24,30 +24,24 @@ p,a,h1,h2,h3,h4,h5{
 }
 
 .imagestyle {
+	padding: 15px;
     width: 200px;
     height: auto;
 }
-.logos{
-	float: left;
-}
+
 
 
 .dms_nav{
-	float: left;
 	color: white;
-	font-size: 18px;
-	margin-left: 30px;
+	font-size: 16px;
+	padding: 9px;
 }
 
 .menu{
-	background: #ffcb05;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 9990;
-    padding-top: 30px;
-    padding-bottom: 30px;
+	background-color: #ffcb05;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d71635;
 }
 
 .left_index h1{
@@ -78,7 +72,6 @@ p,a,h1,h2,h3,h4,h5{
 }
 
 .form-group input{
-	margin-top: 20px;
 }
 
 .form-group .btn{
@@ -87,18 +80,95 @@ p,a,h1,h2,h3,h4,h5{
 }
 
 .right-time {
-    position: absolute;
-    right: 0px;
-    top: 0px;
+	color: black;
+	font-size: 14px;
+	padding: 9px;
+	font-weight: 600;
+}
+
+.iconrightnav{
+    width: auto;
+    height: 25px;
 }
 
 .left {
     position: absolute;
     left: : 0px;
 }
+.matop{
+	margin-top: 90px;
+	position: relative;
+}
+.navmobile{
+	background: blue !important;
+	position: relative;
+	left: 0;
+	right: 0;
+}
 .username{
 	margin-top: 150px !important;
 }
+.password{
+	margin-top: 20px !important;
+}
+.ccx{
+	margin-top: 20px;
+}
+
+.submit{
+	margin-top: 20px;
+}
+
+.delete{
+	margin-top: 20px;
+}
+.nav-tabs {
+    border-bottom: 0 solid rgba(255, 255, 255, 0);
+}
+
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 2; 
+    border: 0 solid rgba(255, 255, 255, 0); 
+    border-radius: 0; 
+}
+
+.nav-tabs>li>a:hover{
+background-color: #d71635;
+color: #ffcb05;
+}
+
+.rightbar>li>a:hover{
+background-color: rgba(255, 255, 255, 0);
+}
+.rightbar>li>a:link{
+background-color: rgba(255, 255, 255,0);
+}
+
+
+
+
+.navbar {
+    margin-bottom: 3px;
+    border-radius: 0px; 
+}
+
+.noborder{
+    border-bottom: 0px;
+     padding-top: 0px;
+    padding-bottom: 0px;
+        min-height: 0; 
+    border:0px solid transparent;
+}
+.thead{
+	color: #d71635
+}
+
+.nav-item a{
+	font-weight: 600;
+	color:  #d71635;
+}
+
 
 
 /*1400 - 1200 =========================================== Start*/
@@ -120,8 +190,16 @@ p,a,h1,h2,h3,h4,h5{
 /*1200 - 1000 =========================================== End*/
 
 /*1000 - 767 =========================================== Start*/
-@media only screen and (max-width: 1000px) {
-  
+@media only screen and (max-width: 990px) {
+  .phone{display: none;
+
+  }
+  .cus{display: none;
+
+  }
+  .log{display: none;
+
+  }
 	.mobilehide{
 		display: none;
 	}
@@ -129,12 +207,21 @@ p,a,h1,h2,h3,h4,h5{
 	.mobileshow{
 		display: block;
 	}
+
+	.username {
+	    margin-top: 30px !important;
+	}
 }
 /*1000 - 767 =========================================== End*/
 
 /*767 - 480 =========================================== Start*/
 @media only screen and (max-width: 767px) {
-
+.navatas{
+	display: none;
+}
+.matop{
+	margin-top: 255px;
+}
 }
 /*767 - 480 =========================================== End*/
 
