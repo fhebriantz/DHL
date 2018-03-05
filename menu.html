@@ -10,8 +10,8 @@
 <body>
 
 
-
-<nav class="navbar menu  navbar-fixed-top navatas">
+<!-- a ====================== -->
+<nav class="navbar menu  mobilehide">
   <div class="container ">
     <div class="navbar-header ">
       <a class="logos" href="index.html" id="menu-home"><img src="asset/image/logo.png" class="imagestyle"></a>
@@ -20,36 +20,37 @@
       <h5 class="dms_nav" >Dock Management System</h5>
     </ul>
     <ul class="nav navbar-nav navbar-right rightbar">
-      <li><h5 class="right-time mobilehide">WEDNESDAY 15 OCTOBER 2018 / 21:15</h5></li>
-      <li><a href="#" style="margin-right: 10px"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a></li>
+      <li><h5 class="right-time mobilehide dates">WEDNESDAY 15 OCTOBER 2018 / 21:15</h5></li>
+      <li><a href="#" class="bell"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a></li>
       <li><a href="#"><img class="iconrightnav" src="asset/image/logout.png" alt=""></a></li>
     </ul>
   </div>
 </nav>
-
-<nav class="navbar menu  navbar-fixed-top">
+ <!--b ====================== -->
+<nav class="navbar menu  mobileshow">
   <div class="container ">
     <div class="navbar-header ">
-      <a style="float: left;" class="logos" href="index.html" id="menu-home"><img src="asset/image/logo.png" class="imagestyle"></a>
-      <h5 class="dms_nav" style="float: left;">Dock Management System</h5>
-      <a href="#" style="margin-left: 25px; margin-right: 10px; float: left;"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a>
-      <a href="#" style="margin-right: 10px; float: left;"><img class="iconrightnav" src="asset/image/logout.png" alt=""></a>
+      <a class="logos" href="index.html" id="menu-home"><img src="asset/image/logo.png" class="imagestyle"></a>
+      <h5 class="dms_nav">Dock Management System</h5>
+       <a href="#" class="logout" ><img class="iconrightnav" src="asset/image/logout.png" alt=""></a>
+       <a href="#" class="bell"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a>
+     
     </div>
   </div>
-</nav>
-<nav class="navbar menu noborder navbar-default navbar-fixed-top matop">
+</nav> 
+<nav class="navbar menu noborder">
   <div class="container">
-    <ul class="nav nav-tabs" role="tablist">
+    <ul class="nav nav-tabs navbottom" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" data-toggle="tab" href="#inbond" role="tab">INBOND </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#outbond" role="tab">OUTBOND</a>
       </li>
-      <li class="nav-item navbar-right">
-        <a class="nav-link" data-toggle="tab" href="#scan" role="tab">SCAN <img src="asset/image/qrcode.png" style="height: 30px; width: auto; margin-left: 5px;" alt=""></a>
+      <li class="nav-item navbar-right" style="float: right;">
+        <a class="nav-link" data-toggle="tab" href="#scan" role="tab">SCAN <img src="asset/image/qrcode.png" class="qrcode" alt=""></a>
       </li>
-      <li class="nav-item navbar-right">
+      <li class="nav-item navbar-right" style="float: right;">
         <a class="nav-link" data-toggle="tab" href="#profile" role="tab">USER PROFILE</a>
       </li>
     </ul>
@@ -57,9 +58,8 @@
 </nav>
 
 
-
 <!-- Tab panes -->
-<div class="container margi">
+<div class="container">
   <div class="tab-content">
     <div class="tab-pane active"   id="inbond" role="tabpanel">
       <table class="table table-striped fontsizetable"  width="100%" cellspacing="0">     
@@ -74,7 +74,7 @@
             <th class="paddingtable">GATE</th>
             <th class="paddingtable">STATUS</th>
             <th class="log paddingtable">LOG</th>
-            <th class="paddingtable">ACTION</th>
+            <th class="paddingtable actiontable">ACTION</th>
           </tr>
         </thead>
 
@@ -90,8 +90,8 @@
             <td class="paddingtable">Truck Arrival</td>
             <td class="log paddingtable"></td>
             <td style="float: left;">
-              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
-              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+              <a href="edit.html"><button type="button" class="action btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="action btn btn-danger">D</button></a>
             </td>
           </tr>
           <tr>    
@@ -105,8 +105,8 @@
             <td class="paddingtable">Truck Arrival</td>
             <td class="log paddingtable"></td>
             <td style="float: left;">
-              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
-              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+              <a href="edit.html"><button type="button" class="action btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="action btn btn-danger">D</button></a>
             </td>
           </tr>
           <tr>    
@@ -120,17 +120,17 @@
             <td class="paddingtable">Truck Arrival</td>
             <td class="log paddingtable"></td>
             <td style="float: left;">
-              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
-              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+              <a href="edit.html"><button type="button" class="action btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="action btn btn-danger">D</button></a>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
     <div class="tab-pane" id="outbond" role="tabpanel">
-      <table class="table table-striped fontsizetable" width="30%" cellspacing="0" >     
-        <thead class="thead">
-           <tr>
+      <table class="table table-striped fontsizetable"  width="100%" cellspacing="0">     
+        <thead class="thead" >
+          <tr>
             <th class="paddingtable">ID</th>
             <th class="paddingtable">PLAT NO</th>
             <th class="paddingtable">DRIVER NAME</th>
@@ -140,12 +140,28 @@
             <th class="paddingtable">GATE</th>
             <th class="paddingtable">STATUS</th>
             <th class="log paddingtable">LOG</th>
-            <th class="paddingtable">ACTION</th>
+            <th class="paddingtable actiontable">ACTION</th>
           </tr>
         </thead>
 
-        <tbody >
-         <tr>    
+        <tbody>
+        
+          <tr>    
+            <td class="paddingtable">542SPK</td>
+            <td class="paddingtable">T 5646 CCD</td>
+            <td class="paddingtable">Andi Lau</td>
+            <td class="phone paddingtable">08124545664</td>
+            <td class="cus paddingtable">TiKi</td>
+            <td class="paddingtable">- - -</td>
+            <td class="paddingtable">- - -</td>
+            <td class="paddingtable">Truck Arrival</td>
+            <td class="log paddingtable"></td>
+            <td style="float: left;">
+              <a href="edit.html"><button type="button" class="action btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="action btn btn-danger">D</button></a>
+            </td>
+          </tr>
+          <tr>    
             <td class="paddingtable">221KPT</td>
             <td class="paddingtable">T 1234 FCG</td>
             <td class=" paddingtable">Udin Sedunia</td>
@@ -156,11 +172,11 @@
             <td class="paddingtable">Truck Arrival</td>
             <td class="log paddingtable"></td>
             <td style="float: left;">
-              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
-              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+              <a href="edit.html"><button type="button" class="action btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="action btn btn-danger">D</button></a>
             </td>
           </tr>
-           <tr>    
+            <tr>    
             <td class="paddingtable">256SNG</td>
             <td class="paddingtable">T 2992 BGC</td>
             <td class="paddingtable">Sandi Rizaldi</td>
@@ -171,23 +187,8 @@
             <td class="paddingtable">Truck Arrival</td>
             <td class="log paddingtable"></td>
             <td style="float: left;">
-              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
-              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
-            </td>
-          </tr>
-           <tr>    
-            <td class="paddingtable">542SPK</td>
-            <td class="paddingtable">T 5646 CCD</td>
-            <td class="paddingtable">Andi Lau</td>
-            <td class="phone paddingtable">08124545664</td>
-            <td class="cus paddingtable">TiKi</td>
-            <td class="paddingtable">- - -</td>
-            <td class="paddingtable">- - -</td>
-            <td class="paddingtable">Truck Arrival</td>
-            <td class="log paddingtable"></td>
-            <td style="float: left;">
-              <a href="edit.html"><button type="button" class="btn btn-danger">E</button></a>
-              <a href="#" ><button type="button" class="btn btn-danger">D</button></a>
+              <a href="edit.html"><button type="button" class="action btn btn-danger">E</button></a>
+              <a href="#" ><button type="button" class="action btn btn-danger">D</button></a>
             </td>
           </tr>
         </tbody>

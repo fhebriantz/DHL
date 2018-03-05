@@ -1,7 +1,13 @@
 p,a,h1,h2,h3,h4,h5{
 	font-family: 'Roboto', sans-serif;
 }
+.mobilehide{
+	display: block;
+}
 
+.mobileshow{
+	display: none;
+}
 
 .dashboard{
 	margin-top: 90px;
@@ -10,13 +16,7 @@ p,a,h1,h2,h3,h4,h5{
 	margin-right: 50px
 }
 
-.mobilehide{
-	display: block;
-}
 
-.mobileshow{
-	display: none;
-}
 
 .left_index img{
 	width: 100%;
@@ -29,12 +29,17 @@ p,a,h1,h2,h3,h4,h5{
     height: auto;
 }
 
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	border-top: none; 
+}
+
 
 
 .dms_nav{
 	color: white;
 	font-size: 16px;
 	padding: 9px;
+	float: left;
 }
 
 .menu{
@@ -78,13 +83,27 @@ p,a,h1,h2,h3,h4,h5{
 	background-color: #d71635;
 	color: white;
 }
-
+.bell{
+	margin-right: 10px
+}
+.logout{
+	margin-right: 30px; float: right;
+}
 .right-time {
 	color: black;
 	font-size: 14px;
-	padding: 9px;
+	padding: 10px;
 	font-weight: 600;
+	float: right;
+	position: relative;
 }
+.logos{
+	float: left;
+}
+.qrcode{
+	 height: 30px; width: auto; margin-left: 5px;" 
+}
+
 
 .iconrightnav{
     width: auto;
@@ -95,10 +114,6 @@ p,a,h1,h2,h3,h4,h5{
     position: absolute;
     left: : 0px;
 }
-.matop{
-	margin-top: 90px;
-	position: relative;
-}
 .navmobile{
 	background: blue !important;
 	position: relative;
@@ -107,6 +122,8 @@ p,a,h1,h2,h3,h4,h5{
 }
 .username{
 	margin-top: 150px !important;
+	float: left;
+	position: relative;
 }
 .password{
 	margin-top: 20px !important;
@@ -171,6 +188,10 @@ background-color: rgba(255, 255, 255,0);
 .login{
 	width: 100%;
 }
+.action{
+		padding: 1px 6px;
+    font-size: 12px;
+	}
 
 
 
@@ -188,12 +209,17 @@ background-color: rgba(255, 255, 255,0);
 
 /*1200 - 1000 =========================================== Start*/
 @media only screen and (max-width: 1200px) {
-
+	.left_index h1{
+		font-size: 36px;
+	}
 }
 /*1200 - 1000 =========================================== End*/
 
 /*1000 - 767 =========================================== Start*/
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 991px) {
+	.navatas{
+	display: none;
+}
   .phone{display: none;
 
   }
@@ -203,12 +229,30 @@ background-color: rgba(255, 255, 255,0);
   .log{display: none;
 
   }
-	.mobilehide{
-		display: none;
-	}
+  .rightbar>li>a{
+  	padding-top: 3px;
+  	padding-bottom: 0px;
+  }
+  .dms_nav{
+	color: white;
+	font-size: 16px;
+	padding: 7px;
+}
 
-	.mobileshow{
-		display: block;
+  .imagestyle{
+  	width: 180px;
+  }
+.dates{
+	display: none;
+}
+	.menu{
+		padding-bottom: 0px;
+		padding-top: 0px;
+	}
+	.iconrightnav{
+		height: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 
 	.username {
@@ -227,19 +271,14 @@ background-color: rgba(255, 255, 255,0);
 
 /*767 - 480 =========================================== Start*/
 @media only screen and (max-width: 767px) {
-.navatas{
-	display: none;
-}
-.matop{
-	margin-top: 52px;
-}
+
 
   .imagestyle{
-  	width: 100px;
+  	width: 140px;
   }
   .dms_nav{
-  	font-size: 10px;
-  	padding: 5px;
+  	font-size: 12px;
+  	padding: 7px;
   }
   .menu{
 		padding-bottom: 0px;
@@ -250,6 +289,17 @@ background-color: rgba(255, 255, 255,0);
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
+	.mobilehide{
+		display: none;
+	}
+	
+	.mobileshow{
+		display: block;
+	}
+	.bell{
+		float: right;
+		margin-right: 30px;
+	}
 
 	.left_index h1{
 		font-size: 40px;
@@ -258,6 +308,9 @@ background-color: rgba(255, 255, 255,0);
 		margin-top: 70px;
 		color: white;
 		font-size: 18px;
+	}
+	.dashboard{
+		margin-top:60px;
 	}
 	
 }
@@ -293,6 +346,12 @@ background-color: rgba(255, 255, 255,0);
 		color: white;
 		font-size: 12px;
 	}
+	.navbottom>li>a{
+	padding: 10px 10px;
+	}
+	.fontsizetable{
+		font-size: 10px;
+	}
  
 }
 
@@ -324,12 +383,22 @@ background-color: rgba(255, 255, 255,0);
 
 /*480 - 000 =========================================== Start*/
 @media only screen and (max-width: 480px) {
+	.imagestyle{
+  	width: 140px;
+  }
+  .dms_nav{
+  	font-size: 12px;
+  	padding: 7px 0px;
+  }
   	.nav-tabs>li>a {
 	    font-size: 12px;
 	}
 	.left_index h1{
 		font-size: 22px;
 	}
+	.qrcode{
+	 height: 25px; width: auto; margin-left: 5px;" 
+}
 }
 /*480 - 000 =========================================== end*/
 
@@ -340,6 +409,42 @@ background-color: rgba(255, 255, 255,0);
 
 /*Selipan Support*/
 @media screen and (max-width:400px) {
+		.imagestyle{
+  	width: 140px;
+  }
+  .dms_nav{
+  	font-size: 12px;
+  	padding: 7px 0px;
+  }
+  .iconrightnav{
+		height: 15px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	.bell{
+		float: right;
+		margin-right: 15px;
+	}
+	.logout{
+		margin-right: 10px; float: right;
+	}
+	.navbottom>li>a{
+		padding: 10px 5px;
+		font-size: 10px;
+	}
+	.qrcode{
+	 height: 20px; width: auto; margin-left: 5px;" 
+	}
+	.action{
+		padding: 1px 6px;
+    font-size: 12px;
+	}
+		.actiontable{
+		width: 70px;
+	}
+		.fontsizetable{
+		font-size: 10px;
+	}
    
 }
 
@@ -347,10 +452,11 @@ background-color: rgba(255, 255, 255,0);
 @media screen and (max-width:350px) {
   .imagestyle{
   	width: 100px;
+  	padding: 17px 5px;
   }
   .dms_nav{
   	font-size: 10px;
-  	padding: 5px;
+  	padding: 8px 3px;
   }
   .menu{
 		padding-bottom: 0px;
@@ -364,7 +470,28 @@ background-color: rgba(255, 255, 255,0);
 	.left_index h1{
 		font-size: 18px;
 	}
+	.bell{
+		float: right;
+		margin-right: 10px;
+	}
+	.logout{
+		margin-right: 10px; float: right;
+	}
+	.fontsizetable{
+		font-size: 9px;
+	}
+	.actiontable{
+		width: 70px;
+	}
 }
+@media screen and (max-width:320px) {
+		.fontsizetable{
+		font-size: 9px;
+	}
+	.actiontable{
+		width: 70px;
+	}
+	}
 
 /*Selipan Support*/
 @media screen and (max-width:300px) {
@@ -375,5 +502,12 @@ background-color: rgba(255, 255, 255,0);
 	.mobileshow{
 		display: block;
 	}
+		.navbottom>li>a{
+		padding: 10px 3px;
+		font-size: 10px;
+	}
+	.qrcode{
+	 height: 20px; width: auto; margin-left: 3px;" 
+}
 
 }

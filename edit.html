@@ -9,35 +9,48 @@
 </head>
 <body>
 
-<nav class="navbar menu">
-  <div class="container">
-    <div class="navbar-header">
+<!-- a ====================== -->
+<nav class="navbar menu  mobilehide">
+  <div class="container ">
+    <div class="navbar-header ">
       <a class="logos" href="index.html" id="menu-home"><img src="asset/image/logo.png" class="imagestyle"></a>
     </div>
     <ul class="nav navbar-nav">
       <h5 class="dms_nav" >Dock Management System</h5>
     </ul>
     <ul class="nav navbar-nav navbar-right rightbar">
-      <li><h5 class="right-time mobilehide">WEDNESDAY 15 OCTOBER 2018 / 21:15</h5></li>
-      <li><a href="#" style="margin-right: 10px"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a></li>
+      <li><h5 class="right-time mobilehide dates">WEDNESDAY 15 OCTOBER 2018 / 21:15</h5></li>
+      <li><a href="#" class="bell"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a></li>
       <li><a href="#"><img class="iconrightnav" src="asset/image/logout.png" alt=""></a></li>
     </ul>
   </div>
 </nav>
+ <!--b ====================== -->
+<nav class="navbar menu  mobileshow">
+  <div class="container ">
+    <div class="navbar-header ">
+      <a class="logos" href="index.html" id="menu-home"><img src="asset/image/logo.png" class="imagestyle"></a>
+      <h5 class="dms_nav">Dock Management System</h5>
+       <a href="#" class="logout" ><img class="iconrightnav" src="asset/image/logout.png" alt=""></a>
+       <a href="#" class="bell"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a>
+     
+    </div>
+  </div>
+</nav> 
 <nav class="navbar menu noborder">
   <div class="container">
-    <ul class="nav nav-tabs" role="tablist">
+    <ul class="nav nav-tabs navbottom" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active"  href="menu.html" >INBOND </a>
+        <a class="nav-link active" data-toggle="tab" href="#inbond" role="tab">INBOND </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link"  href="menu.html" >OUTBOND</a>
+        <a class="nav-link" data-toggle="tab" href="#outbond" role="tab">OUTBOND</a>
       </li>
-      <li class="nav-item navbar-right">
-        <a class="nav-link" href="menu.html">SCAN <img src="asset/image/qrcode.png" style="height: 30px; width: auto; margin-left: 5px;" alt=""></a>
+      <li class="nav-item navbar-right" style="float: right;">
+        <a class="nav-link" data-toggle="tab" href="#scan" role="tab">SCAN <img src="asset/image/qrcode.png" class="qrcode" alt=""></a>
       </li>
-      <li class="nav-item navbar-right">
-        <a class="nav-link" href="menu.html">USER PROFILE</a>
+      <li class="nav-item navbar-right" style="float: right;">
+        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">USER PROFILE</a>
       </li>
     </ul>
   </div>
