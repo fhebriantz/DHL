@@ -168,6 +168,9 @@ background-color: rgba(255, 255, 255,0);
 	font-weight: 600;
 	color:  #d71635;
 }
+.login{
+	width: 100%;
+}
 
 
 
@@ -211,6 +214,14 @@ background-color: rgba(255, 255, 255,0);
 	.username {
 	    margin-top: 30px !important;
 	}
+	.left_index{
+		margin-right: 0px
+	}
+	.left_index p{
+		margin-top: 70px;
+		color: white;
+		font-size: 20px;
+	}
 }
 /*1000 - 767 =========================================== End*/
 
@@ -220,26 +231,68 @@ background-color: rgba(255, 255, 255,0);
 	display: none;
 }
 .matop{
-	margin-top: 255px;
+	margin-top: 52px;
 }
+
+  .imagestyle{
+  	width: 100px;
+  }
+  .dms_nav{
+  	font-size: 10px;
+  	padding: 5px;
+  }
+  .menu{
+		padding-bottom: 0px;
+		padding-top: 0px;
+	}
+	.iconrightnav{
+		height: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.left_index h1{
+		font-size: 40px;
+	}
+	.left_index p{
+		margin-top: 70px;
+		color: white;
+		font-size: 18px;
+	}
+	
 }
 /*767 - 480 =========================================== End*/
 
 /*Selipan Support*/
 @media screen and (max-width:700px) {
+	.left_index h1{
+		font-size: 36px;
+	}
+	.left_index p{
+		margin-top: 70px;
+		color: white;
+		font-size: 16px;
+	}
    
 }
 
 
 /*Selipan Support*/
 @media screen and (max-width:650px) {
+	.left_index h1{
+		font-size: 32px;
+	}
    
 }
 
 
 /*Selipan Support*/
 @media screen and (max-width:600px) {
-
+	.left_index p{
+		margin-top: 70px;
+		color: white;
+		font-size: 12px;
+	}
  
 }
 
@@ -250,7 +303,20 @@ background-color: rgba(255, 255, 255,0);
 
 /*Selipan Support*/
 @media screen and (max-width:500px) {
-   
+   .fontsizetable{
+   	font-size: 10px;
+   }
+   .paddingtable{
+   	padding: 3px !important;
+   }
+   .left_index h1{
+		font-size: 26px;
+	}
+	.left_index p{
+		margin-top: 50px;
+		color: white;
+		font-size: 12px;
+	}
 }
 
 
@@ -258,7 +324,12 @@ background-color: rgba(255, 255, 255,0);
 
 /*480 - 000 =========================================== Start*/
 @media only screen and (max-width: 480px) {
-  
+  	.nav-tabs>li>a {
+	    font-size: 12px;
+	}
+	.left_index h1{
+		font-size: 22px;
+	}
 }
 /*480 - 000 =========================================== end*/
 
@@ -274,7 +345,25 @@ background-color: rgba(255, 255, 255,0);
 
 /*Selipan Support*/
 @media screen and (max-width:350px) {
-  
+  .imagestyle{
+  	width: 100px;
+  }
+  .dms_nav{
+  	font-size: 10px;
+  	padding: 5px;
+  }
+  .menu{
+		padding-bottom: 0px;
+		padding-top: 0px;
+	}
+	.iconrightnav{
+		height: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.left_index h1{
+		font-size: 18px;
+	}
 }
 
 /*Selipan Support*/
@@ -286,4 +375,5 @@ background-color: rgba(255, 255, 255,0);
 	.mobileshow{
 		display: block;
 	}
+
 }
