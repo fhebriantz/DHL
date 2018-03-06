@@ -191,10 +191,13 @@ background-color: rgba(255, 255, 255,0);
 	width: 100%;
 }
 .action{
-		padding: 1px 6px;
+		padding: 1px 1px;
     font-size: 12px;
 	}
-
+.bordered{
+	border: 1px solid #999;
+	border-radius: 20px;
+}
 
 
 /*1400 - 1200 =========================================== Start*/
@@ -438,7 +441,7 @@ background-color: rgba(255, 255, 255,0);
 	 height: 20px; width: auto; margin-left: 5px;" 
 	}
 	.action{
-		padding: 1px 6px;
+		padding: 1px 1px;
     font-size: 12px;
 	}
 		.actiontable{
