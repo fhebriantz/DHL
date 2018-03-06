@@ -111,6 +111,12 @@ p,a,h1,h2,h3,h4,h5{
     width: auto;
     height: 25px;
 }
+.selected{
+	background-color: rgba(222, 8, 8, 0.25); 
+}
+.text-center>tr>th, .text-center>tr>td{
+	text-align: center;
+}
 
 .left {
     position: absolute;
@@ -164,14 +170,27 @@ background-color: rgba(255, 255, 255, 0);
 background-color: rgba(255, 255, 255,0);
 }
 
+.security{
+	font-size: 22px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
 
+.security-table>tr>th, .security-table, .security-table>tr>td{
+	border: 1px solid #999;
+}
 
+.fontcollor{
+	color: #fff;
+}
 
 .navbar {
     margin-bottom: 3px;
     border-radius: 0px; 
 }
-
+.thead-black{
+	color: #ffcb05
+}
 .noborder{
     border-bottom: 0px;
      padding-top: 0px;
@@ -370,7 +389,7 @@ background-color: rgba(255, 255, 255,0);
    .fontsizetable{
    	font-size: 10px;
    }
-   .paddingtable{
+   .paddingtable>tr>td,.paddingtable>tr>td{
    	padding: 3px !important;
    }
    .left_index h1{

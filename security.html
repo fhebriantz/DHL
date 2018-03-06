@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DMS Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="asset/css/style.css"/> 
+</head>
+<body style="background-color: #444">
+
+
+<!-- a ====================== -->
+<nav class="navbar menu  mobilehide">
+  <div class="container ">
+    <div class="navbar-header ">
+      <a class="logos" href="index.html" id="menu-home"><img src="asset/image/logo.png" class="imagestyle"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <h5 class="dms_nav" >Dock Management System</h5>
+    </ul>
+    <ul class="nav navbar-nav navbar-right rightbar">
+      <li><h5 class="right-time mobilehide dates security">WEDNESDAY 15 OCTOBER 2018 / 21:15</h5></li>
+    </ul>
+  </div>
+</nav>
+ <!--b ====================== -->
+<nav class="navbar menu  mobileshow">
+  <div class="container ">
+    <div class="navbar-header ">
+      <a class="logos" href="index.html" id="menu-home"><img src="asset/image/logo.png" class="imagestyle"></a>
+      <h5 class="dms_nav">Dock Management System</h5>
+     
+    </div>
+  </div>
+</nav> 
+<nav class="navbar menu noborder">
+  <div class="container">
+    <ul class="nav nav-tabs navbottom">
+      <li class="nav-item">
+        <a href="menu.html" class="nav-link active">OUTBOND </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Tab panes -->
+<div class="container">
+  <div class="">
+    <div class="active">
+      <table class="table security-table text-center fontsizetable"  width="100%" cellspacing="0">     
+        <thead class="thead-black security-table paddingtable text-center" >
+          <tr>
+            <th class="phone">ARRIVAL TIME</th>
+            <th>TIME</th>
+            <th>PLAT</th>
+            <th>GATE</th>
+            <th>STATUS</th>
+            <th>PLT</th>
+            <th class="phone">DELAY</th>
+            <th class="phone">INFORMATION</th>
+          </tr>
+        </thead>
+
+        <tbody class="fontcollor security-table paddingtable">
+          <tr>    
+            <td class="phone">20:30</td>
+            <td>60 Min</td>
+            <td>T 2992 BGC</td>
+            <td>4</td>
+            <td style="color: #d71635"><strong>STANDBY</strong></td>
+            <td>21:10</td>
+            <td class="phone">0 Min</td>
+            <td class="phone">TRUCK GO TO GATE 4</td>
+          </tr>
+          <tr class="selected">    
+            <td class="phone">21:00</td>
+            <td>70 Min</td>
+            <td>T 1412 ADF</td>
+            <td>3</td>
+            <td><strong>STANDBY</strong></td>
+            <td>21:00</td>
+            <td class="phone">6 Min</td>
+            <td class="phone">TRUCK GO TO GATE 2</td>
+          </tr>
+          <tr>    
+            <td class="phone">20:22</td>
+            <td>75 Min</td>
+            <td>T 1233 TGA</td>
+            <td>1</td>
+            <td style="color: green"><strong>TRUCK ENTER WH</strong></td>
+            <td>21:22</td>
+            <td class="phone">4 Min</td>
+            <td class="phone">TRUCK GO TO GATE 1</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+<script src="asset/js/jquery.min.js"></script>
+<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+<script>
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+</html>
