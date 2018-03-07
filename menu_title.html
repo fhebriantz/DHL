@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="asset/css/style.css"/> 
+  <link rel="stylesheet" type="text/css" href="asset/css/ionicons.min.css"/> 
 </head>
 <body>
-
 
 <!-- a ====================== -->
 <nav class="navbar menu  mobilehide">
@@ -21,7 +21,24 @@
     </ul>
     <ul class="nav navbar-nav navbar-right rightbar">
       <li><h5 class="right-time mobilehide dates">WEDNESDAY 15 OCTOBER 2018 / 21:15</h5></li>
-      <li><a href="#" class="bell"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a></li>
+      <li class="dropdown "><a class="dropdown-toggle bell" data-toggle="dropdown" href="#"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <div class="notificationBar" style="width: 400px">
+          <li>
+            <i class="ion-android-notifications"></i>
+            <div>Pengiriman sudah sampai</div>
+          </li>
+           <li>
+            <i class="ion-android-notifications"></i>
+            <div>Pengiriman delay 20 min</div>
+          </li>
+           <li>
+            <i class="ion-android-notifications"></i>
+            <div>Proses pick up</div>
+          </li>
+          </div>
+        </ul>
+      </li>
       <li><a href="#"><img class="iconrightnav" src="asset/image/logout.png" alt=""></a></li>
     </ul>
   </div>
@@ -32,8 +49,9 @@
     <div class="navbar-header ">
       <a class="logos" href="index.html" id="menu-home"><img src="asset/image/logo.png" class="imagestyle"></a>
       <h5 class="dms_nav">Dock Management System</h5>
+
        <a href="#" class="logout" ><img class="iconrightnav" src="asset/image/logout.png" alt=""></a>
-       <a href="#" class="bell"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a>
+       <a id="klik" href="#" class="bell notification"><img class="iconrightnav" src="asset/image/bell.png" alt=""></a>
      
     </div>
   </div>
@@ -47,11 +65,11 @@
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#outbond" role="tab">OUTBOND</a>
       </li>
-      <li class="nav-item navbar-right" style="float: right;">
-        <a class="nav-link" data-toggle="tab" href="#scan" role="tab">SCAN <img src="asset/image/qrcode.png" class="qrcode" alt=""></a>
+      <li class="nav-item navbar-right" style="float: right; cursor: pointer;">
+        <a class="nav-link">SCAN <img src="asset/image/qrcode.png" class="qrcode" alt=""></a>
       </li>
-      <li class="nav-item navbar-right userprofile" style="float: right;">
-        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">USER PROFILE</a>
+      <li class="nav-item navbar-right userprofile" style="float: right; cursor: pointer;">
+        <a class="nav-link" href="security.html">USER PROFILE</a>
       </li>
     </ul>
   </div>
